@@ -15,6 +15,7 @@ public class rps {
         System.out.println("1.Rock");
         System.out.println("2.Scissor");
         System.out.println("3.Paper");
+        // game with computer 
         if (input == 1) {
             int numcom;
             Random rand = new Random();
@@ -48,9 +49,13 @@ public class rps {
                 System.out.println("Enter valid input");
             }
         }
+        // game between two people
         else if(input == 2){
             System.out.println("Only two person can play at once");
+            // createe and array 1D
             int[] p = new int[2];
+
+            // i could have directly made two variables and asked for two inputs there
             for(int i = 0 ; i <  2 ; i++){
                 int n = i+ 1;
                 System.out.println("Enter Player "+n+" your move in number: ");
